@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .container{
+                display: grid;
+                outline:1px solid black;
+                 grid-template-areas:"box1 box1 box1 box1 box2 box2"
+                                     "box1 box1 box1 box1 box2 box2"
+                                     "box1 box1 box1 box1 box2 box2"
+                                     "box3 box3 box4 box4 box5 box5"
+                                     "box3 box3 box4 box4 box5 box5"
+                                     "box3 box3 box6 box6 box5 box5" 
+                                     "box7 box7 box6 box6 box5 box5"
+                                     "box7 box7 box6 box6 box5 box5";
+
+            }
+           
+            .container>div{
+                font-size: 30px;
+                outline:1px dashed black;
+            }
+            /* #box1{
+                
+            } */
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div style="grid-area:box1;" id="box1">
+                <img src="https://www.peacocktv.com/dam/growth/assets/seo/HarryPotter/hp2/hp2-trailer-poster.jpg" alt="" width="100%" height="100%">
+            </div>
+            <div style="grid-area:box2;" id="box2">2</div>
+            <div style="grid-area:box3;" id="box3">3</div>
+            <div style="grid-area:box4;" id="box4">4</div>
+            <div style="grid-area:box5;" id="box5">5</div>
+            <div style="grid-area:box6;" id="box6">6</div>
+            <div style="grid-area:box7;" id="box7">7</div>
+        </div>
+    </body>
+</html>

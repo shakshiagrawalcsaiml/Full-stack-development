@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+
+            @font-face {
+                font-family: "MyFont";
+                src: url("./fonts/CrestoriaMonogram-7OGLK.ttf") format("truetype");
+                    
+            }
+          p{
+            font-family: "MyFont";
+            font-size: 50px;
+            text-align: center;
+          }
+          
+         
+          *{
+            margin: 0;
+            padding: 13px;
+            font-size: 40px;
+            background-color: rgb(251, 254, 255);
+          }
+          #myid{
+            color: rgb(144, 16, 108);
+          }
+          .myclass{
+            color: rgb(38, 18, 173);
+          }
+          h3{
+            color: rgb(0, 73, 79);
+            text-shadow: 2px 2px 5px rgb(0, 73, 79);
+          }
+          input[type="text"]{
+            border: 2px solid rgb(159, 27, 111);
+            border-radius: 5px;
+            padding: 5px;
+
+          }
+          input[type="email"]{
+            border: 2px solid rgb(126, 23, 167);
+            border-radius: 15px;
+            padding: 5px;
+          }
+          li[data="null"]{
+            color: rgb(192, 82, 225);
+            font-size: 30px;
+          }
+          mytag{
+            color: rgb(0, 73, 79);
+            font-size: 50px;
+          }
+        </style>
+    </head>
+    <body>
+        <p>Hello,Shakshi!</p>
+        <h3>Selectors</h3>
+        <ul>
+            <li class="myclass">universal</li>
+            <li id="myid">id selector</li>
+            <li class="myclass">class</li>
+            <li>Element</li>
+            <li data="null">Attribute</li>
+            <li>combinators</li>
+            <li>pseudo-classes</li>
+            <li>pseudo-elements</li>
+            <mytag>custom</mytag>
+        </ul>
+        
+        <input type="text" placeholder="Enter your name"><br/>
+        <input type="email" placeholder="Enter your email"><br/> 
+    </body>

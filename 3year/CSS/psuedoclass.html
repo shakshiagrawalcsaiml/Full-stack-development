@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>/*:enabled,
+                :disabled,
+                 :valid,
+                 :invalid,
+                 :checked 
+                 :in-range,
+                 :out-of-range
+                 read-only
+                 :read-write
+                 :placeholder-shown
+                 :optional
+                 :required
+                 
+                 */
+        input{
+            font-size:20px;
+            border-width: 0 0 2px 0px;
+            border-color: blueviolet;
+        }       
+        input:enabled{
+           text-shadow: 2px 2px 5px rgb(75, 36, 167);
+        } 
+        input:required{
+            border-color: burlywood;
+        }
+        input:optional{
+            border-color:rgb(75, 36, 167);
+        }
+        input:disabled{
+            border-color:transparent;
+            background-color: grey;
+
+        }
+        input:valid{
+            border-color: green;
+        }
+        input:invalid{
+            border-color: red;
+        }   
+        input:in-range{
+            border-color: green;
+        }
+        input:out-of-range{
+            border-color: red;
+        }
+        input:checked{
+            accent-color: green;
+        }
+        input:read-only{
+            border-color: blue;
+        }
+        input:read-write{
+            border-color: green;
+        }
+        </style>
+        <body>
+            <input ="text" placeholder="Enter your first name" required><br/><br/>
+             <input ="text" placeholder="Enter your  middle name" ><br/><br/>
+
+              <input ="text" placeholder="Enter your last name"><br/><br/>
+              <input ="text" placeholder="Mathura" disabled><br/><br/>
+              <input type="email" placeholder="Enter your email" required><br/><br/>
+                <input type="radio" name="gender" value="male"> Male
+                <input type="radio" name="gender" value="female"> Female<br><br>
+                <h3>Enter your age in range and out of range</h3>
+                <input type="number" name="age" placeholder="Enter your age" min="10" max="60"><br/><br/>
+                <input type="text" value="you cannot modify this" readonly><br/><br/>
+                <input type="text" value="Enter your address"><br/><br/>
+                <input type="checkbox" name="terms" value="agree"> I agree to the terms and conditions<br><br>
+              <input type="submit" value="Submit"><br/><br/>
+        </body>
+</html>

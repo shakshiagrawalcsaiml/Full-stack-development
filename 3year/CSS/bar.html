@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .slider {
+            width: 500vw;
+            height: 600px;
+            overflow: scroll;
+            scrollbar-width: none;
+            display: inline-flex;
+        }
+        .item {
+            width: 100vw;
+            height: 600px;
+            position: sticky;
+            left: 0px;
+            font-size: 50px;
+            color: white;
+            -webkit-text-stroke-width: 2px;
+
+            text-align: center;
+        }
+        .energy {
+            width: 70%;
+            height: 100%;
+            border-radius: inherit;
+            background: linear-gradient(to right, rgba(22, 178, 35, 0.996) 30%, rgba(39, 196, 52, 0.996) 10px, transparent 10px, transparent 100%);
+        }
+        </style>
+</head>
+<body>
+    <div class="slider">
+        <div class="item" style="background-color: rgb(53, 205, 255);"> </div>
+        <div class="item" style="background-color: rgb(179, 22, 22);"> </div>
+        <div class="item" style="background-color: rgb(3, 117, 20);"> </div>
+        <div class="item" style="background-color: rgb(255, 59, 232);"> </div>
+        <div class="item" style="background-color: rgb(225, 255, 55);"> </div>
+        <div class="energy"></div>
+    </div>
+    
+</body>
+</html>

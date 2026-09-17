@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 1 dimensonal arranging layout ko flexbox kehte hai */
+        .container{
+            /* height: 90vh; */
+            outline: 3px solid black;
+            flex-direction: row;
+            display: flex;
+             justify-content: space-evenly;  
+            align-items: center;  
+            flex-wrap: wrap;  
+
+        }
+        .container>div{
+            color: white;
+            width: 150px;
+            text-align: center;
+            height: 100px;
+            line-height: 100px;
+            align-content: center;
+        }
+        #box{
+           /* flex-basis:150px;
+            flex-grow: 0;
+            flex-shrink: 0;*/
+            background-color: rgb(84, 23, 130);
+           /* flex: 1 1 150px;*/
+            /* jitna jaydaa grow karna hoga utna bdaa number dena hoga  */
+            /*agr isme 4 likhe hai toh voh sirf flex waale ka lega */
+        }
+        #box1{
+            /* flex-basis:150px;
+            flex-grow: 0;
+            flex-shrink: 0; */
+            background-color: rgb(188, 34, 181);   
+            /*jitna jaydaa shrink karna hoga utna bdaa number dena hoga*/
+        }
+        #box2{
+            /* flex-basis:150px;
+            flex-grow: 0;
+            flex-shrink: 0; */
+            background-color: rgb(206, 22, 111);
+        }
+        #box3{
+            background-color: rgb(206, 22, 111);
+        }
+         #box4{
+            background-color: rgb(206, 22, 111);
+        }
+         #box5{
+            background-color: rgb(206, 22, 111);
+        }
+         #box6{
+            background-color: rgb(206, 22, 111);
+        }
+         #box7{
+            background-color: rgb(206, 22, 111);
+        }
+         #box8{
+            background-color: rgb(206, 22, 111);
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="box">1</div>
+        <div id="box1">2</div>
+        <div id="box2">3</div>
+        <div id="box3">4</div>
+        <div id="box4">5</div>
+        <div id="box5">6</div>
+        <div id="box6">7</div>
+        <div id="box7">8</div>
+        <div id="box8">9</div>
+    </div>
+</body>
+</html>

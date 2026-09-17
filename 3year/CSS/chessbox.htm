@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        :root{
+            --primary-color:rgb(3, 1, 2);
+            --text-size: 30px;
+        }
+        .container{
+            background-color: var(--primary-color);
+            display: grid;
+            height: 500px;
+            width: 500px;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            outline:1px solid black;
+        }
+        .container>div{
+            font-size: calc(var(--text-size)*2);
+            outline:1px dashed black;
+        }
+        /* #box1{
+            background-color: rgb(206, 22, 111);
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 3;
+            z-index: 1;
+        }
+        #box6{
+            background-color: rgb(83, 9, 45);
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            z-index: 2;
+        } */
+         .parent{
+            --primary-color:rgb(227, 220, 223);
+            display:grid;
+            background-color:rgb(0, 0, 0);
+            grid-template-columns:subgrid;
+            grid-template-rows:subgrid;
+            grid-column: 1/3;
+            grid-row: 1/3;
+         }
+         .child{
+            background-color: var(--primary-color);
+           color:white;
+           grid-column: 1/2;
+           grid-row: 1/2;
+         }
+         .child1{
+            background-color: var(--primary-color);
+           color:white;
+           grid-column: 3/2;
+           grid-row: 3/2;
+         }
+         .child2{
+            background-color: var(--primary-color);
+           color:white;
+           grid-column: 3/1;
+           grid-row: 1/2;
+         }
+         .child3{
+            background-color: var(--primary-color);
+           color:white;
+           grid-column: 2/3;
+           grid-row: 2/3;
+         }
+         .child4{
+            background-color: var(--primary-color);
+           color:white;
+           grid-column: 2/3;
+           grid-row: 2/3;
+         }
+         .child5{
+            background-color: var(--primary-color);
+           color:white;
+           grid-column: 2/3;
+           grid-row: 2/3;
+         }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="parent">
+            <div class="child">
+                0
+            </div>
+            <div class="child1">
+                1
+            </div>
+            <div class="child2">
+                2
+            </div>
+            <div class="child3">
+                3
+            </div>
+            <div class="child4">
+                4
+            </div>
+            <div class="child5">
+                5
+            </div>
+
+        </div>
+        </div>
+</body>
+</html>

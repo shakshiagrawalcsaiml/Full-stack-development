@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress Circle</title>
+
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            /*background: linear-gradient(to right, #61034a, #850d63, #b73391 , #bb62b1 );*/
+            background: radial-gradient( #61034a, #850d63, #b73391 , #bb62b1 );
+        }
+
+        .gauge {
+            width: 200px;
+            height: 200px;
+
+            border-radius: 50%;
+
+            background: conic-gradient(#390355 0%,
+                    #22229d 87%,
+                    #442ad6 87%,
+                    #5650c3 100%);
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .text {
+            position: absolute;
+
+            color: white;
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+
+            background: conic-gradient(#390355 0%,
+                    #22229d 87%,
+                    #442ad6 87%,
+                    #5650c3 100%);
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="power-card">
+        <div class="gauge">
+            <div class="text">87%</div>
+        </div>
+        <div class="box"></div>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .container{
+                display: grid;
+                 /* grid-template-columns: repeat(2, 100px); yeh  hum reapeat ko 100 px 100px ki jgh use krte hai   */
+                 grid-template-columns: repeat(auto-fit ,minmax(100px, 1fr)); /* auto-fit ka mtlb hai jitna space hoga utna hi boxes ko fit krdo  */
+                 /* grid-template-rows: 100px 100px; */
+                outline:1px solid black;
+                 grid-template-areas: "box1 box1 box2"
+                                     "box1 box1 box3" 
+                                     "box4 box5 box6";
+            }
+            /* .container2{
+                display: grid;
+                 /* grid-template-columns: repeat(2, 100px); yeh  hum reapeat ko 100 px 100px ki jgh use krte hai   */
+                 /* grid-template-columns: repeat(auto-fill ,minmax(100px, 1fr)); /* auto-fill ka mtlb hai jitna space hoga usse chod dega   */
+                 /* grid-template-rows: 100px 100px; */ 
+                /* outline:1px solid black;
+                grid-template-areas: "box1 box1 box2"
+                                     "box1 box1 box3" 
+                                     "box4 box5 box6";
+            } */
+           
+            .container>div{
+                font-size: 30px;
+                outline:1px dashed black;
+            }
+             .container2>div{
+                font-size: 30px;
+                outline:1px dashed black;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container" id="1">
+            <div style="grid-area:box1;">1</div>
+            <div style="grid-area:box2;">2</div>
+            <div style="grid-area:box3;">3</div>
+            <div style="grid-area:box4;">4</div>
+            <div style="grid-area:box5;">5</div>
+            <div style="grid-area:box6;">6</div>
+        </div><br><br><br><br>
+        <!-- <div class="container2" id="2">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+        </div> -->
+    </body>
+</html>

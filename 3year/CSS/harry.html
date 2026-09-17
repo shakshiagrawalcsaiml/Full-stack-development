@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Horizontal Image Slider</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background-color: #222;
+            font-family: Georgia, 'Times New Roman', serif;
+        }
+
+   
+        .container {
+            width: 80%;
+            height: 500px;
+            margin: 80px auto;
+
+            display: flex;
+            align-items: center;
+            gap: 50px;
+        }
+
+
+       
+
+        .slider {
+            width: 45%;
+            height: 400px;
+
+            overflow-x: auto;
+            overflow-y: hidden;
+
+            scroll-behavior: smooth;
+
+            display: flex;
+        }
+
+        .slider::-webkit-scrollbar {
+            display: none;
+        }
+
+        .images {
+            display: flex;
+            
+        }
+
+        .images img {
+            width: 350px;
+            height: 400px;
+
+            object-fit: cover;
+
+            border-radius: 20px;
+
+            flex-shrink: 0;
+        }
+
+
+       
+
+        .content {
+            width: 50%;
+            color: white;
+        }
+
+        .content h1 {
+            font-size: 50px;
+            margin-bottom: 30px;
+        }
+
+        .content p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <div class="container">
+
+
+
+        <div class="slider">
+
+            <div class="images">
+
+                <img src="https://www.peacocktv.com/dam/growth/assets/seo/HarryPotter/hp2/hp2-trailer-poster.jpg">
+                <img src="https://i.ytimg.com/vi/8ANmIeUQBQw/maxresdefault.jpg">
+                
+                <img src="https://static1.cbrimages.com/wordpress/wp-content/uploads/2022/09/Blood-written-on-the-wall-about-the-chamber-of-secrets-in-Harry-Potter.jpg">
+                <img src="https://cdn.segmentnextimages.com/wp-content/uploads/2023/02/Hogwarts-Legacy-Chamber-of-Secrets-1116x628.jpg">
+                
+                <img src="https://static1.srcdn.com/wordpress/wp-content/uploads/2023/12/harry-potter-at-the-entrance-to-the-chamber-of-secrets-in-harry-potter-and-the-chamber-of-secrets.jpg">
+                <img src="https://static0.srcdn.com/wordpress/wp-content/uploads/2022/12/an-image-of-harry-asking-tom-riddle-for-the-wand-in-harry-potter-and-the-chamber-of-secrets.jpg">
+                
+                <img src="https://www.slashfilm.com/img/gallery/the-14-best-harry-potter-scenes-ranked/harry-fights-the-basilisk-the-chamber-of-secrets-1662492303.jpg">
+                <img src="https://i.ytimg.com/vi/l-YWSdVCxus/mqdefault.jpg">
+                
+                <img src="https://static0.srcdn.com/wordpress/wp-content/uploads/2020/05/harry-potter-tom-riddle-diary.jpg">
+                <img src="https://static0.cbrimages.com/wordpress/wp-content/uploads/2022/11/Tom_Riddle_Chamber_of_Secrets.jpg">
+                
+                <img src="https://static1.srcdn.com/wordpress/wp-content/uploads/2019/06/HARRY-POTTER-AND-THE-CHAMBER-OF-SECRETS.jpg">
+                <img src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2023/04/dumbledore-holding-tom-riddle-s-diary.jpg">
+            
+                
+
+            </div>
+
+        </div>
+
+
+
+
+        <div class="content">
+
+            <h1>Plan A Trip</h1>
+
+            <p>
+                 Hogwarts holds many secrets, but none is more mysterious than the
+    Chamber of Secrets. As Harry and his friends uncover the truth behind
+    the hidden chamber, they face ancient magic, dangerous creatures,
+    and a dark secret connected to the past.
+            </p>
+
+            <p>
+                Deep beneath Hogwarts lies a forgotten chamber filled with mystery and
+    danger. Follow Harry as he discovers hidden secrets, faces powerful
+    enemies, and fights to protect his friends from an ancient evil.
+            </p>
+
+        </div>
+
+
+    </div>
+
+
+</body>
+
+</html>

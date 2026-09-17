@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div:has(h1){/* CSS applied based on child. */
+            background-color:rgb(252, 24, 24)
+        }
+        div:not(:has(h1)){
+            background-color: aqua;
+        }
+        div:is(:has(h1),:has(h2)){
+            border: 2px solid black;
+        }
+        div:was(:has(h1),:has(h2)){
+            border: 2px solid rgb(181, 202, 19);
+        }
+    </style>
+</head>
+<body>
+    <!-- :has
+    :is
+    :was
+    :not -->
+
+    <div>
+        <h1>Topic</h1>
+    </div>
+    <div>
+        <h2>Sub Topic</h2>
+    </div>
+</body>
+</html>
