@@ -1,39 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">   
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <style>
-            body {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                height: 100vh;
-                background-color: #f2f2f2;
-                flex-direction: column;
-            }
-            input {
-                margin: 10px 0;
-                padding: 10px;
-                width: 200px;
-            }
-            button {
-                padding: 10px 20px;
-                background-color:blue;
-                color: white;
-                border: none;
-                cursor: pointer;
-            }
-        </style>
-    </head>
-    <body>  
-        <h2>Login Form</h2>
-        <h4>Username</h4>
-        <input type="text" placeholder="Enter username">
-        <h4>Password</h4>
-        <input type="password" placeholder="Enter password">
-        <button>Login</button>
-        </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #1b1b1b, #4b2c20);
+            font-family: Arial, sans-serif;
+        }
+
+        .login-box {
+            width: 350px;
+            padding: 30px;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 25px;
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #444;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 18px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+
+        input:focus {
+            outline: none;
+            border-color: #7b4b35;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #7b4b35;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #5c3625;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="login-box">
+
+        <h1>Login Page</h1>
+
+      
+
+            <label>Username</label>
+            <input type="text" placeholder="Enter username">
+
+            <label>Password</label>
+            <input type="password" placeholder="Enter password">
+
+            <button type="submit">Login</button>
+
+      
+
+    </div>
+
+</body>
 </html>

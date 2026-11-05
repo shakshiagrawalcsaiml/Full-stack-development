@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>TilePress</title>
+<style>
+body{font-family:Arial;margin:0}
+nav{display:flex;justify-content:space-between;padding:15px;background:white}
+nav input{padding:8px;border-radius:15px;border:1px solid gray}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fill,minmax(200px,1fr));
+gap:15px;
+padding:20px
+}
+
+.card{background:#eee;padding:10px}
+.pic{height:200px;background:tomato}
+.card:nth-child(2) .pic{height:250px;background:skyblue}
+.card:nth-child(3) .pic{height:300px;background:orange}
+.card:nth-child(4) .pic{height:220px;background:violet}
+.card:nth-child(5) .pic{height:270px;background:lightgreen}
+
+.user{display:flex;gap:5px;color:gray}
+
+@media(max-width:700px){
+.gallery{grid-template-columns:repeat(2,1fr)}
+nav input{width:120px}
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<b>TilePress</b>
+<input type="text" placeholder="Search">
+<span>🔔 ◯</span>
+</nav>
+
+<div class="gallery">
+
+<div class="card">
+<div class="pic"></div>
+<p>Autumn cabin mood board</p>
+<div class="user">● @oneheart</div>
+</div>
+
+<div class="card">
+<div class="pic"></div>
+<p>Minimal desk setup</p>
+<div class="user">● @nailsdraws</div>
+</div>
+
+<div class="card">
+<div class="pic"></div>
+<p>Kitchen renovation</p>
+<div class="user">● @homebyrosa</div>
+</div>
+
+<div class="card">
+<div class="pic"></div>
+<p>Lavender wallpaper</p>
+<div class="user">● @skylar</div>
+</div>
+
+<div class="card">
+<div class="pic"></div>
+<p>Weekend hike essentials</p>
+<div class="user">● @ratna</div>
+</div>
+
+</div>
+
+</body>
+</html>

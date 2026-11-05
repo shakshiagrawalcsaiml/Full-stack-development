@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Practice</title>
+    <style>
+        body{
+            background: linear-gradient(to right,rgb(18, 2, 2),black);
+            
+        }
+        h1{
+            color: white;    
+            font-size: 50px;
+        }
+        p{
+            color:white;
+        }
+        .play{
+              padding: 7px 15px;
+        }
+        .more{
+            color:white;
+            padding: 8px 20px;
+            background-color:grey;
+        }
+        
+        .container{
+             display:flex;
+             flex-direction:row;
+              gap:5px;
+              flex-wrap:nowrap;
+              overflow-x:auto;
+        }
+        h3{
+            color:white;
+        }
+        .container>div{
+             height:120px;
+            width:300px;
+             border-radius: 5px;
+             align-content:end;
+             flex-shrink:0;
+
+        }
+        #box1{
+           color:white;
+            background:linear-gradient(to right,rgb(189, 93, 89),rgb(201, 105, 121)
+            ,rgb(178, 111, 178))
+        }
+        #box2{
+           color:white;
+            background:linear-gradient(to right,rgb(2, 45, 32),rgb(7, 60, 48)
+            ,rgb(3, 90, 72))
+        }
+        #box3{
+           color:white;
+            background:linear-gradient(to right,rgb(158, 121, 8),rgb(199, 175, 38)
+            ,rgb(173, 150, 48))
+        }
+        #box4{
+           color:white;
+            background:linear-gradient(to right,rgb(10, 103, 117),rgb(52, 135, 177)
+            ,rgb(131, 222, 236))
+        }
+        #box5{
+           color:white;
+            background:linear-gradient(to right,rgb(151, 58, 55),rgb(201, 105, 121)
+            ,rgb(198, 76, 127))
+        }
+        #box6{
+           color:white;
+            background:linear-gradient(to right,rgb(49, 34, 34),rgb(51, 26, 30)
+            ,rgb(20, 12, 20))
+        }
+        .container1{
+            display:flex;
+            gap:5px;
+            flex-direction:row;
+            flex-wrap:nowrap;
+            overflow-x:auto;
+        }
+       .container1>div{
+        height:120px;
+        width:300px;
+        align-content:end;
+        border-radius:5px;
+        flex-shrink:0;
+
+       }
+       #box7{
+           color:white;
+            background:linear-gradient(to right,rgb(158, 121, 8),rgb(199, 175, 38)
+            ,rgb(173, 150, 48))}
+        #box8{
+           color:white;
+            background:linear-gradient(to right,rgb(151, 58, 55),rgb(201, 105, 121)
+            ,rgb(198, 76, 127))
+        }
+        #box9{
+           color:white;
+            background:linear-gradient(to right,rgb(189, 93, 89),rgb(201, 105, 121)
+            ,rgb(178, 111, 178))}
+        #box10{
+           color:white;
+            background:linear-gradient(to right,rgb(175, 55, 15),rgb(209, 91, 48)
+            ,rgb(170, 101, 78))
+        }
+        #box11{
+           color:white;
+            background:linear-gradient(to right,rgb(2, 45, 32),rgb(7, 60, 48)
+            ,rgb(3, 90, 72))
+        }
+         #box12{
+           color:white;
+            background:linear-gradient(to right,rgb(49, 34, 34),rgb(51, 26, 30)
+            ,rgb(20, 12, 20))
+         }
+        .container2{
+            display:flex;
+            flex-direction:row;
+            gap:5px;
+            flex-wrap:nowrap;
+            overflow-x:auto;
+        }
+        .container2>div{
+            height:120px;
+            width:300px;
+            border-radius:5px;
+            align-content:end;
+            flex-shrink:0;
+        }
+        #box13{
+           color:white;
+            background:linear-gradient(to right,rgb(10, 103, 117),rgb(52, 135, 177)
+            ,rgb(131, 222, 236))
+        }
+        #box14{
+           color:white;
+            background:linear-gradient(to right,rgb(10, 117, 60),rgb(52, 177, 110)
+            ,rgb(82, 179, 93))
+        }
+        #box15{
+           color:white;
+            background:linear-gradient(to right,rgb(49, 34, 34),rgb(51, 26, 30)
+            ,rgb(20, 12, 20))
+         }
+         #box16{
+           color:white;
+            background:linear-gradient(to right,rgb(2, 45, 32),rgb(7, 60, 48)
+            ,rgb(3, 90, 72))
+        }
+        #box17{
+           color:white;
+            background:linear-gradient(to right,rgb(189, 93, 89),rgb(201, 105, 121)
+            ,rgb(178, 111, 178))}
+        #box18{
+           color:white;
+            background:linear-gradient(to right,rgb(175, 55, 15),rgb(209, 91, 48)
+            ,rgb(170, 101, 78))
+        }
+        .container>div:hover,
+        .container1>div:hover,
+        .container2>div:hover{
+            transform:scale(1.05)
+
+        }
+        /* TABLET */
+      @media (min-width: 600px) and (max-width: 1023px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    .container > div,
+    .container1 > div,
+    .container2 > div {
+        width: 150px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+}
+
+
+/* MOBILE */
+@media (max-width: 599px) {
+
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    p {
+        font-size: 13px;
+    }
+
+    .container > div,
+    .container1 > div,
+    .container2 > div {
+        width: 110px;
+    }
+
+    .container,
+    .container1,
+    .container2 {
+        gap: 5px;
+    }
+
+    .play,
+    .more {
+        display: block;
+        margin-bottom: 8px;
+    }
+}
+    </style>
+</head>
+
+
+<body>
+     <h1>Midnight Horizon</h1>
+     <p>A stranded astronaut must choose between saving her crew or completting<br> humanitys last mission before the signals fade foreever
+    <br><br>
+    <button class="play">&#9654; Play</button>
+    <button class="more">&#9432; More Info</button>
+     </p>
+     <h3>Trending Now</h3>
+   <div class="container">
+    <div id="box1">Neon Drift</div>
+    <div id="box2">silent Harbor</div>
+    <div id="box3">Echo chamber</div>
+    <div id="box4">Last Light</div>
+    <div id="box5">Glass city</div>
+    <div id="box6">The lonng dark</div>
+   </div>
+   <br>
+   <h3>Continue Watching</h3>
+   <div class="container1">
+    <div id="box7">Echo chamber</div>
+    <div id="box8">Glass city</div>
+    <div id="box9">Neon Drift</div>
+    <div id="box10">Wildfire</div>
+    <div id="box11">silent Harbor</div>
+    <div id="box12">The lonng dark</div>
+   </div>
+   <br>
+   <h3>Action Movies</h3>
+   <div class="container2">
+    <div id="box13">Last Light</div>
+    <div id="box14">paper moon</div>
+    <div id="box15">The lonng dark</div>
+    <div id="box16">silent Harbor</div>
+    <div id="box17">Neon Drift</div>
+    <div id="box18">Wildfire</div>
+   </div>
+    </body>
+    </html>

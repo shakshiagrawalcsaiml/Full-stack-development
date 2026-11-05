@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRID</title>
+    <style>
+        .container{
+            display:flex;
+            justify-content:space-between;
+            align-items: center;
+        }
+        input{
+            width:400px;
+        }
+        .icons{
+            display:flex;
+            gap:15px;
+        }
+        .grid{
+            display: grid;
+            outline:1px solid black;
+            grid-templates-areas:"box1 box1 box1 box2 box2 box2 box3 box3 box3 box4 box4 box4 box5 box5 box5"
+                                  "box1 box1 box1 box2 box2 box2 box3 box3 box3 box4 box4 box4 box5 box5 box5"
+                                  "box1 box1 box1 box2 box2 box2 box3 box3 box3 box4 box4 box4 box5 box5 box5"
+                                  "box1 box1 box1 box2 box2 box2 box3 box3 box3 box4 box4 box4 box5 box5 box5";
+        }
+        .grid>div{
+                font-size: 30px;
+                outline:1px dashed black;
+            }
+    </style>
+    </head>
+<body>
+    <div class="container">
+        <b>Tile press</b>
+        <input type="text" placeholder="Search for ideas">
+        <div class="icons">
+        <span>&#9432</span>
+        <span>&#9654</span>
+        <span>&#128276</span></div>
+    </div>
+    <div class="grid">
+        <div id="box1"></div>
+        <div id="box2"></div>
+        <div id="box3"></div>
+        <div id="box4"></div>
+        <div id="box5"></div>
+        <div id="box6"></div>
+        <div id="box7"></div>
+        <div id="box8"></div>
+    </div>
+</body>
+</html>
